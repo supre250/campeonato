@@ -43,7 +43,7 @@ nav ul li a {
 
 
 nav ul li a.activo {
-    background-color: #fcd116;
+    background-color: #2c23ce;
     color: #003366;
     font-weight: bold;
 }
@@ -79,7 +79,7 @@ table {
 th, td {
     padding: 12px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #4a1fc0;
 }
 
 th {
