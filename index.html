@@ -30,6 +30,7 @@
             <h2>Tabla de posiciones</h2>
             <div class="contenedor-tabla">
                 <table>
+                    <!--Cabezera de tabla-->
                     <thead>
                         <tr>
                             <th>Pos</th>
@@ -44,6 +45,7 @@
                             <th>Pts</th>
                         </tr>
                     </thead>
+                    <!--Datos de la tabla-->
                     <tbody>
                         <tr>
                             <td>1</td>
@@ -247,6 +249,7 @@
         <section id="partidos" class="datos-tabla">
             <h2>Proximos Partidos</h2>
             <div class="partidos-contenedor">
+                <!--Contenedor de fechas de partidos partidos-->
                 <div class="partido">
                     <div class="fecha-partido">Miércoles 9 Abril, 2025 - 19:00</div>
                     <div class="equipos">
@@ -378,11 +381,13 @@
         </section>
         <!--Fin seccion partidos-->
 
-        <!--Inicio resultados-->
+        <!--Inicio seccion resultados-->
         <section id="resultados">
             <h2>Últimos resultados</h2>
+            <!--Contenedor de resultados-->
             <div class="resultados-contenedor">
                 <div class="resultado">
+                    <!--Resultados-->
                     <div class="fecha-resultado">4 Abril, 2025</div>
                     <div class="equipos">
                         <div class="equipo-local">
@@ -431,7 +436,7 @@
                         <div class="marcador">4 - 0</div>
                         <div class="equipo-visitante">
                             <img src="img/cuenca.png" alt="Cuenca" class="escudo-resultado">
-                            <span>Depp. Cuenca</span>
+                            <span>Dep. Cuenca</span>
                         </div>
                     </div>
 
@@ -469,7 +474,7 @@
                         </div>
                         <div class="marcador">1 - 1</div>
                         <div class="equipo-visitante">
-                            <img src="img/delfin.png" alt="Delfín" class="escudo-resultado">
+                            <img src="img/delfinsc.png" alt="Delfín" class="escudo-resultado">
                             <span>Delfín</span>
                         </div>
                     </div>
@@ -494,20 +499,24 @@
         <!--Inicio Seccion formulario-->
         <section id="formulario">
             <h2>Formulario de Contacto</h2>
-            <form class="formulario-contacto" action="#" method="post">
+            <!--Inicio formulario-->
+            <form class="formulario-contacto" action="#" method="get">
+                <!--Ingreso del nombre-->
                 <div class="grupo-formulario">
                     <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre">
                 </div>
 
+                <!--Ingreso de correo-->
                 <div class="grupo-formulario">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email">
                 </div>
-
+                <!--SSleccion de equpi fav-->
                 <div class="grupo-formulario">
                     <label for="equipo">Equipo favorito:</label>
                     <select id="equipo" name="equipo">
+                        <!--Crea opciones a escoger-->
                         <option value="">Seleccione un equipo</option>
                         <option value="barcelona">Barcelona SC</option>
                         <option value="emelec">Emelec</option>
@@ -519,22 +528,20 @@
                         <option value="orense">Orense</option>
                     </select>
                 </div>
-
+                <!--Ingreso mensaje-->
+                
+                <!--Ingreso de suscripcion-->
                 <div class="grupo-formulario">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
-
-                <div class="grupo-formulario">
+                    <!--Caja de seleccion-->
                     <input type="checkbox" id="suscripcion" name="suscripcion">
                     <label for="suscripcion">Deseo recibir noticias sobre el campeonato</label>
                 </div>
-
+            <!--Boton enviar-->
                 <button type="submit" class="boton-enviar">Enviar</button>
             </form>
         </section>
     </main>
-
+    <!--Sub pagina-->
     <footer>
         <div class="contenedor-footer">
             <div class="info-footer">
@@ -543,6 +550,6 @@
             </div>
         </div>
     </footer>
-    </main>
+
 </body>
 </html>
